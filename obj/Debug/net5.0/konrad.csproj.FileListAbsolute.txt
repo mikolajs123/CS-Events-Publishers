@@ -1,0 +1,15 @@
+/Users/mikolajsemeniuk/Projects/C#/konrad/bin/Debug/net5.0/konrad.deps.json
+/Users/mikolajsemeniuk/Projects/C#/konrad/bin/Debug/net5.0/konrad.runtimeconfig.json
+/Users/mikolajsemeniuk/Projects/C#/konrad/bin/Debug/net5.0/konrad.runtimeconfig.dev.json
+/Users/mikolajsemeniuk/Projects/C#/konrad/bin/Debug/net5.0/konrad.dll
+/Users/mikolajsemeniuk/Projects/C#/konrad/bin/Debug/net5.0/ref/konrad.dll
+/Users/mikolajsemeniuk/Projects/C#/konrad/bin/Debug/net5.0/konrad.pdb
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.csprojAssemblyReference.cache
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.AssemblyInfoInputs.cache
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.AssemblyInfo.cs
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.csproj.CoreCompileInputs.cache
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.dll
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/ref/konrad.dll
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.pdb
+/Users/mikolajsemeniuk/Projects/C#/konrad/obj/Debug/net5.0/konrad.genruntimeconfig.cache
