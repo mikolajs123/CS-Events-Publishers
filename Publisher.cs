@@ -20,40 +20,40 @@ namespace EventsAndPublishers
 		// Deklaracja eventu który będzię używał powyższego delegata bez argumentu
 		public event NonArgumentEventHandler NonArgumented;
 
-        // Deklaracja delegata który informuje subscriberów
-        // i przesyła customowy argument
-        public delegate void ArgumentEventHandler(object source, MyEventArgs args);
+		// Deklaracja delegata który informuje subscriberów
+		// i przesyła customowy argument
+		public delegate void ArgumentEventHandler(object source, MyEventArgs args);
 
-        // Deklaracja eventu który będzię używał powyższego delegata z argumentem
-        public event ArgumentEventHandler Argumented;
+		// Deklaracja eventu który będzię używał powyższego delegata z argumentem
+		public event ArgumentEventHandler Argumented;
 
 
-        // Powyzsze delegaty i eventy mozna rowniez w c# napisac tak jak ponizej
-		// natomiast wyzej napisalem te podstawowa wersje abys wiedzial jak to dziala
-		// od strony kuchni.
-		// To:
-        // ` 
-        		// public event EventHandler<EventArgs> NonArgumented;
-        // `
-        // Zamiast:
-        // `
-        //		public delegate void NonArgumentEventHandler(object source, EventArgs args);
-        //		public event NonArgumentEventHandler NonArgumented;
-        // `
-        // Oraz:
-        // ` 
-        		// public event EventHandler<MyEventArgs> Argumented;
-        // `
-        // Zamiast:
-        // `
-        //		public delegate void ArgumentEventHandler(object source, MyEventArgs args);
-        //		public event ArgumentEventHandler Argumented;
-        // `
+		// Powyzsze delegaty i eventy mozna rowniez w c# napisac tak jak ponizej
+			// natomiast wyzej napisalem te podstawowa wersje abys wiedzial jak to dziala
+			// od strony kuchni.
+			// To:
+		// ` 
+				// public event EventHandler<EventArgs> NonArgumented;
+		// `
+		// Zamiast:
+		// `
+		//		public delegate void NonArgumentEventHandler(object source, EventArgs args);
+		//		public event NonArgumentEventHandler NonArgumented;
+		// `
+		// Oraz:
+		// ` 
+				// public event EventHandler<MyEventArgs> Argumented;
+		// `
+		// Zamiast:
+		// `
+		//		public delegate void ArgumentEventHandler(object source, MyEventArgs args);
+		//		public event ArgumentEventHandler Argumented;
+		// `
 		//
-		// Zakomentuj kod od lini 17 włacznie do lini 27 włacznie i Odkomentuj linie 34 oraz 43
+		// Zakomentuj kod od lini 18 włacznie do lini 28 włacznie i Odkomentuj linie 36 oraz 45
 		// i zobacz ze program bedzie działać tak samo
 
-        public void DoSomething()
+		public void DoSomething()
 		{
 			Console.WriteLine("coś robię...");
 			Thread.Sleep(3000);
@@ -61,8 +61,8 @@ namespace EventsAndPublishers
 			// Wywołuje event do subscriberów żeby ich poinformować bez argumentu
 			OnNonArgumented();
 
-            // Wywołuje event do subscriberów żeby ich poinformować z argumentem
-            OnArgumented("moja wiadomość");
+			// Wywołuje event do subscriberów żeby ich poinformować z argumentem
+			OnArgumented("moja wiadomość");
 		}
 
 		// Metodą informująca subcriberów bez argumentu
@@ -73,12 +73,12 @@ namespace EventsAndPublishers
 				NonArgumented(this, EventArgs.Empty);
 		}
 
-        // Metodą informująca subcriberów z argumentem
-        // z reguły dajemy te metody jako protected virtual bo taka jest konwencja
-        protected virtual void OnArgumented(string message)
-        {
-            if (Argumented != null)
-                Argumented(this, new MyEventArgs { Message = message });
-        }
+		// Metodą informująca subcriberów z argumentem
+		// z reguły dajemy te metody jako protected virtual bo taka jest konwencja
+		protected virtual void OnArgumented(string message)
+		{
+		    if (Argumented != null)
+			Argumented(this, new MyEventArgs { Message = message });
+		}
 	}
 }
